@@ -5,13 +5,13 @@ body {
   margin: 40px auto;
   padding: 0 20px;
   line-height: 1.6;
-  color: #f0b2b2;
-  background-color: #1a1a1a;
+  background-color: #111;
+  color: #eee;
 }
 
 /* Headers */
 h1, h2, h3 {
-  color: #f8f8f8;
+  color: #ffffff;
 }
 
 h2 {
@@ -22,7 +22,7 @@ h2 {
 
 /* Links */
 a {
-  color: #ffb347;
+  color: #00ffd1;
   text-decoration: none;
 }
 

@@ -6,7 +6,7 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 1.1em; 
   background-color: #cbc1a8;
-  color: #202020;
+  color: #000000;
   padding: 20px;
   line-height: 1.6;
   overflow-y: scroll;
@@ -37,20 +37,20 @@ h1, h2, h3 {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-top: 0;
-  color: #202020;
+  color: #000000;
 }
 
 h1 {
   font-size: 2.5em;
-  color: #202020;
+  color: #000000;
 }
 
 h2 {
   font-size: 1.5em;
-  border-bottom: 1px solid #202020;
+  border-bottom: 1px solid #000000;
   padding-bottom: 6px;
   margin-bottom: 1em;
-  color: #202020;
+  color: #000000;
   text-shadow: none;
 }
 
@@ -62,24 +62,13 @@ h3 {
 /* Link Styles */
 /* Enhanced Link Styles */
 a {
-  color: #64acff; /* Softer neon blue */
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
+  color: #ad3446;
 }
 
+a:active,
+a:focus,
 a:hover {
-  color: #8812fd; /* Pale lavender highlight */
-  text-decoration: underline;
-}
-
-a:active {
-  color: #ffb677; /* Subtle orange when pressed */
-
-}
-
-a:visited {
-  color: #c9ccff; /* Slightly dimmer to show visited state */
+  color: #7e2633;
 }
 
 /* Footer */

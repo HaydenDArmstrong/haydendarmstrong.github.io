@@ -30,7 +30,7 @@ body {
   height: auto;
   display: block;
   margin: 10px 0;
-  border-radius: 6px; /* optional rounded corners */
+  border-radius: 6px; 
 } */
 
 
@@ -87,12 +87,17 @@ a:hover {
   margin-bottom: 1.5em;
 }
 
-.project-images img {
-  max-width: 70%;
-  height: auto;
-  border-radius: 6px;
-  object-fit: cover;
-  border: 1px solid #444; 
+.project-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers the images horizontally */
+  gap: 10px;
 }
 
-
+.project-images img {
+  max-width: 80%;      /* makes them less wide */
+  height: auto;        /* preserves aspect ratio */
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid #444;
+}

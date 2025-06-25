@@ -32,10 +32,10 @@ body {
 
 .card:hover {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
-  transform: translateY(-4px);
+  transform: translateY(-2px);
 }
 
-/* Typography */
+/* Headers */
 h1, h2, h3 {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 700;
@@ -74,13 +74,13 @@ a {
 }
 
 a:hover {
-  color: #a3d3ff;
+  color: #ffdfa3;
   text-decoration: underline;
-  text-shadow: 0 0 5px #a3d3ff;
+  text-shadow: 0 0 5px #ffdfa3;
 }
 
 a:visited {
-  color: #9ab2d2;
+  color: #fff4ce;
 }
 
 /* Footer */

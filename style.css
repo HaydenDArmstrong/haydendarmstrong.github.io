@@ -1,80 +1,101 @@
-/* Layout */
+/* Import Evangelion-style font for headers */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap');
+
+/* Base Layout */
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.1em;
-  background-color: #111;
-  color: #eee;
+  background-color: #121212;
+  color: #e0e0e0;
   padding: 20px;
   line-height: 1.6;
   overflow-y: scroll;
 }
 
+/* Page Width Limiter */
 .limiter {
   max-width: 640px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Typography */
-h1, h2, h3 {
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-top: 0;
-  color: #c9c4c6;
-  text-shadow: 0 0 6px #c2c0c1;
-}
-
-h2 {
-  border-bottom: 1px solid #444;
-  padding-bottom: 4px;
-  margin-bottom: 1em;
-  color: #ffffff;
-  text-shadow: none;
-}
-
-/* Links */
-a {
-  color: #00ffd1;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-a:hover {
-  text-decoration: underline;
-  text-shadow: 0 0 4px #00ffd1;
-}
-
-/* Cards */
+/* Card Styling */
 .card {
-  background-color: #1b1b1b;
+  background-color: #1e1e1e;
   border-radius: 8px;
   padding: 20px;
   margin: 30px 0;
-  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   animation: fadeInUp 0.6s ease both;
 }
 
 .card:hover {
-  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
   transform: translateY(-4px);
 }
 
-/* Project Section */
-.project {
-  margin-bottom: 1.5em;
+/* Typography */
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 0;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #ff0055;
+  text-shadow: 0 0 10px rgba(255, 0, 85, 0.4);
+}
+
+h2 {
+  font-size: 1.5em;
+  border-bottom: 1px solid #333;
+  padding-bottom: 6px;
+  margin-bottom: 1em;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+/* Link Styles */
+a {
+  color: #7abaff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #a3d3ff;
+  text-decoration: underline;
+  text-shadow: 0 0 5px #a3d3ff;
+}
+
+a:visited {
+  color: #9ab2d2;
 }
 
 /* Footer */
 .contact {
   text-align: center;
   font-size: 0.9em;
-  color: #aaa;
+  color: #a0a0a0;
 }
 
-/* Animations */
+/* Projects */
+.project {
+  margin-bottom: 1.5em;
+}
+
+/* Animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;

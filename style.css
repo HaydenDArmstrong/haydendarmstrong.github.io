@@ -27,7 +27,13 @@ body {
   margin: 30px 0;
   border: 1px solid #000000; 
 }
-
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+  border-radius: 6px; /* optional rounded corners */
+}
 
 
 /* Headers */

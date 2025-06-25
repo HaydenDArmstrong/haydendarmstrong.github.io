@@ -4,8 +4,8 @@
 /* Base Layout */
 body {
   font-family: 'Inter', sans-serif;
-  font-size: 1.1em;
-  color: #595959a4;
+  font-size: 1.1em; 
+  background-color: #505050;
   color: #e0e0e0;
   padding: 20px;
   line-height: 1.6;
@@ -65,21 +65,27 @@ h3 {
 }
 
 /* Link Styles */
+/* Enhanced Link Styles */
 a {
-  color: #7abaff;
+  color: #9ecbff; /* Softer neon blue */
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 a:hover {
-  color: #ffdfa3;
+  color: #dab6ff; /* Pale lavender highlight */
   text-decoration: underline;
-  text-shadow: 0 0 5px #ffdfa3;
+  text-shadow: 0 0 8px #ffdfa3, 0 0 12px #ffdfa3;
+}
+
+a:active {
+  color: #ffb677; /* Subtle orange when pressed */
+  text-shadow: 0 0 6px #ffcfa3;
 }
 
 a:visited {
-  color: #fff4ce;
+  color: #e3d3ff; /* Slightly dimmer to show visited state */
 }
 
 /* Footer */

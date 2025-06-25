@@ -6,7 +6,7 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 1.1em; 
   background-color: #cbc1a8;
-  color: #e0e0e0;
+  color: #202020;
   padding: 20px;
   line-height: 1.6;
   overflow-y: scroll;
@@ -21,12 +21,11 @@ body {
 
 /* Card Styling */
 .card {
-  background-color: #212121;
+  background-color: #cbc1a8;
   border-radius: 10px;
   padding: 10px;
   margin: 30px 0;
-  border: 1px solid #ffffff; /* White outline */
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Optional soft white glow */
+  border: 1px solid #000000; 
 }
 
 
@@ -38,20 +37,20 @@ h1, h2, h3 {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-top: 0;
-  color: #ffffff;
+  color: #202020;
 }
 
 h1 {
   font-size: 2.5em;
-  color: #ffffff;
+  color: #202020;
 }
 
 h2 {
   font-size: 1.5em;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #202020;
   padding-bottom: 6px;
   margin-bottom: 1em;
-  color: #ffffff;
+  color: #202020;
   text-shadow: none;
 }
 

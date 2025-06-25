@@ -23,11 +23,10 @@ body {
 .card {
   background-color: #212121;
   border-radius: 10px;
-  border-top: 5px;
   padding: 10px;
   margin: 30px 0;
-  border-color: #ffffff;
-  box-shadow: #ffffff;
+  border: 1px solid #ffffff; /* White outline */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Optional soft white glow */
 }
 
 

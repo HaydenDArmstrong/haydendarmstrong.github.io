@@ -22,6 +22,7 @@ body {
 /* Card Styling */
 .card {
   background-color: #1e1e1e;
+  border-radius: 4px;
   padding: 5px;
   margin: 30px 0;
 }
@@ -79,7 +80,7 @@ a:active {
 }
 
 a:visited {
-  color: #e3d3ff; /* Slightly dimmer to show visited state */
+  color: #33ff00; /* Slightly dimmer to show visited state */
 }
 
 /* Footer */

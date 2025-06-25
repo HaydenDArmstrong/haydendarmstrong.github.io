@@ -21,16 +21,14 @@ body {
 
 /* Card Styling */
 .card {
-  background-color: #808080;
+  background-color: #212121;
   border-radius: 2px;
   border-top: 5px;
   padding: 10px;
   margin: 30px 0;
 }
 
-.card:hover {
-  transform: translateY(-1px);
-}
+
 
 /* Headers */
 h1, h2, h3 {

@@ -90,13 +90,13 @@ a:hover {
 .project-images {
   display: flex;
   flex-direction: column;
-  align-items: center; /* centers the images horizontally */
+  align-items: center; 
   gap: 10px;
 }
 
 .project-images img {
-  max-width: 80%;      /* makes them less wide */
-  height: auto;        /* preserves aspect ratio */
+  max-width: 80%;      
+  height: auto;        
   border-radius: 6px;
   object-fit: cover;
   border: 1px solid #444;

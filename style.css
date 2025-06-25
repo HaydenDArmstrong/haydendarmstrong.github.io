@@ -1,6 +1,6 @@
 /* Layout */
 body {
-  font-family: 'Orbitron', sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 1.1em;
   background-color: #111;
   color: #eee;
@@ -22,8 +22,8 @@ h1, h2, h3 {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: 0;
-  color: #ff0055;
-  text-shadow: 0 0 6px #ff0055;
+  color: #c9c4c6;
+  text-shadow: 0 0 6px #c2c0c1;
 }
 
 h2 {

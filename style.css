@@ -1,58 +1,87 @@
-/* General Styles */
+/* Layout */
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px;
-  line-height: 1.6;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1em;
   background-color: #111;
   color: #eee;
+  padding: 20px;
+  line-height: 1.6;
+  overflow-y: scroll;
 }
 
-/* Headers */
+.limiter {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Typography */
 h1, h2, h3 {
-  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0;
+  color: #ff0055;
+  text-shadow: 0 0 6px #ff0055;
 }
 
 h2 {
-  border-bottom: 2px solid #444;
+  border-bottom: 1px solid #444;
   padding-bottom: 4px;
-  margin-top: 2em;
+  margin-bottom: 1em;
+  color: #ffffff;
+  text-shadow: none;
 }
 
 /* Links */
 a {
   color: #00ffd1;
   text-decoration: none;
+  font-weight: 500;
 }
 
 a:hover {
   text-decoration: underline;
+  text-shadow: 0 0 4px #00ffd1;
+}
+
+/* Cards */
+.card {
+  background-color: #1b1b1b;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 30px 0;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.06);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  animation: fadeInUp 0.6s ease both;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.15);
+  transform: translateY(-4px);
 }
 
 /* Project Section */
 .project {
-  margin-bottom: 20px;
+  margin-bottom: 1.5em;
 }
 
 /* Footer */
 .contact {
-  margin-top: 40px;
+  text-align: center;
   font-size: 0.9em;
   color: #aaa;
-  text-align: center;
 }
 
-.card {
-  background-color: rgb(80, 80, 80);
-  border-radius: 10px;
-  padding: 20px;
-  margin-top: 20px;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1); 
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.card:hover {
-  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2); 
-  transform: translateY(-4px);
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

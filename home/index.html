@@ -1,35 +1,64 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="icon" href="">
-		<title> Hello </title>
-	</head>
-	<body>
-		<div id="title">titlehere</div>
+  <head>
+    <title>{{ startpage.name }}</title>
 
-		<div id=mainframe>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="public/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="public/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="public/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="public/favicon/site.webmanifest" />
 
-			<div class=linkblock style="background-image:url(img/inserthere.png)">
-				<ul>
-					<li><a href="https://www.wsfsbank.com">Banking</a></li>
-					<li><a href="https://mail.google.com">E-Mail</a></li>
-					<li><a href="https://www.github.com">Github</a></li>
-				</ul>
-			</div>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
-			<div class=linkblock style="background-image:url(img/inserthere.png);">
-				<ul>
-					<li><a href="https://www.netflix.com">Netflix</a></li>
-					<li><a href="https://open.spotify.com/">Spotify</a></li>
-				</ul>
-			</div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-
-
-			</div>
-		</div>
-	</body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="page">
+      {% for column in startpage.columns %}
+      <div class="column">
+        {% for category in column.categories %}
+        <div class="category">
+          <h2>{{ category.name }}</h2>
+          <div class="rows">
+            {% for row in category.rows %} {% if row == "Separator" %}
+            <div class="separator"></div>
+            {% else %}
+            <div class="ico">{{ row.Link.ico | safe }}</div>
+            <div class="lbl">
+              <a href="{{ row.Link.url | safe }}">{{ row.Link.lbl }}</a>
+            </div>
+            {% endif %} {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+    <div class="navigation">
+      {% for startpage_name, startpage_filepath in navigation %}
+      <a href="{{ startpage_filepath | safe }}">{{ startpage_name }}</a>
+      {% endfor %}
+    </div>
+  </body>
 </html>
